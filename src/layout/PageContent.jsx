@@ -1,13 +1,16 @@
-import Header from "../layout/Header.jsx";
-import Footer from "../layout/Footer.jsx";
+import React from 'react';
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 
 const PageContent = ({ children }) => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      {children}
+      <main className="flex-grow">
+        {children}
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

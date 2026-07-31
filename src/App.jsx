@@ -1,13 +1,18 @@
-import { createRoot } from "react-dom/client";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import App from "./App.jsx";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import PageContent from './layout/PageContent';
+import HomePage from './pages/HomePage';
 
-createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <Switch>
-     <Route exact path="/" component={HomePage} />
-    </Switch>
-  </BrowserRouter>
-);
+function App() {
+  return (
+    <Router>
+      <PageContent>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+        </Switch>
+      </PageContent>
+    </Router>
+  );
+}
 
 export default App;
