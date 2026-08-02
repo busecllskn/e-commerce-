@@ -23,7 +23,7 @@ const ProductCard = ({ image, title, department, oldPrice, newPrice }) => {
           <span className="text-[#23856D]">{newPrice}</span>
         </div>
 
-        {/* Renk Paleti Noktaları */}
+        {/* Renk Paleti */}
         <div className="flex items-center gap-1.5 mt-1">
           <span className="w-4 h-4 rounded-full bg-[#23A6F0]"></span>
           <span className="w-4 h-4 rounded-full bg-[#2DC071]"></span>

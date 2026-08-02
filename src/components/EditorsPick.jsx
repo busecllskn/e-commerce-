@@ -1,4 +1,3 @@
-// src/components/EditorsPick.jsx
 import React from 'react';
 import menImg from '../assets/left_image.png';
 import womenImg from '../assets/right_image.png';
