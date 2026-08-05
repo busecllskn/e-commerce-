@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, Search, ShoppingCart, Heart, User, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -38,18 +39,18 @@ const Header = () => {
       {/* Ana Navigasyon Çubuğu */}
       <div className="bg-white py-4 px-4 md:px-10 flex items-center justify-between border-b border-gray-200">
         {/* Logo */}
-        <div className="text-3xl font-bold text-[#252B42]">
+        <Link to="/" className="text-3xl font-bold text-[#252B42]">
           Bandage
-        </div>
+        </Link>
 
         {/* Masaüstü Menü */}
         <nav className="hidden md:flex items-center gap-8 font-medium text-[#737373]">
-          <a href="#" className="text-[#252B42] font-semibold">Home</a>
-          <a href="#" className="flex items-center gap-1 hover:text-[#252B42]">Shop</a>
-          <a href="#" className="hover:text-[#252B42]">About</a>
-          <a href="#" className="hover:text-[#252B42]">Blog</a>
-          <a href="#" className="hover:text-[#252B42]">Contact</a>
-          <a href="#" className="hover:text-[#252B42]">Pages</a>
+          <Link to="/" className="text-[#252B42] font-semibold">Home</Link>
+          <Link to="/shop" className="flex items-center gap-1 hover:text-[#252B42]">Shop</Link>
+          <Link to="/about" className="hover:text-[#252B42]">About</Link>
+          <Link to="/blog" className="hover:text-[#252B42]">Blog</Link>
+          <Link to="/contact" className="hover:text-[#252B42]">Contact</Link>
+          <Link to="/pages" className="hover:text-[#252B42]">Pages</Link>
         </nav>
 
         {/* Sağ Aksiyonlar */}
