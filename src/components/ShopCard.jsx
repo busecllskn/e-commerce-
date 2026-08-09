@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductCard = ({ image, title, department, oldPrice, newPrice }) => {
+const ShopCard = ({ image, title, department, oldPrice, newPrice }) => {
   return (
     <div className="flex flex-col bg-white group cursor-pointer">
       {/* Ürün Görseli */}
@@ -23,7 +23,7 @@ const ProductCard = ({ image, title, department, oldPrice, newPrice }) => {
           <span className="text-[#23856D]">{newPrice}</span>
         </div>
 
-        {/* Renk Paleti Noktaları */}
+        {/* Renk Paleti*/}
         <div className="flex items-center gap-1.5 mt-1">
           <span className="w-4 h-4 rounded-full bg-[#23A6F0]"></span>
           <span className="w-4 h-4 rounded-full bg-[#2DC071]"></span>
@@ -35,4 +35,4 @@ const ProductCard = ({ image, title, department, oldPrice, newPrice }) => {
   );
 };
 
-export default ProductCard;
+export default ShopCard;
