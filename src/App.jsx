@@ -4,6 +4,7 @@ import PageContent from './layout/PageContent';
 import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import ProductsPage from './pages/ProductsPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/product" component={ProductsPage} />
           <Route path="/products" component={ProductsPage} />
           <Route path="/about" component={ProductsPage} />
+          <Route path="/contact" component={ContactPage} />
         </Switch>
       </PageContent>
     </Router>
