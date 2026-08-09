@@ -5,10 +5,10 @@ const ContactSection = () => {
   return (
     <div className="w-full min-h-[700px] bg-gradient-to-r from-[#0b2b3c] via-[#0f4a5c] to-[#1a7a8c] text-white flex items-center relative overflow-hidden">
       
-      {/* Ana İçerik Konteyner */}
+      {/* Ana İçerik */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between w-full z-10 py-16 lg:py-0">
         
-        {/* Sol Taraf: Başlık, Açıklama ve Buton */}
+        {/* Başlık, Açıklama ve Buton */}
         <div className="flex flex-col items-start text-left max-w-md gap-6 w-full lg:w-[40%] py-8">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight uppercase">
             CONTACT US
@@ -21,7 +21,7 @@ const ContactSection = () => {
           </button>
         </div>
 
-        {/* Sağ Taraf: Görsel + Ofis Bilgileri Overlay */}
+        {/* Görsel + Ofis Bilgileri */}
         <div className="relative w-full lg:w-[60%] h-[600px] lg:h-[700px] self-stretch">
           
           {/* Arkaplan Görseli */}
@@ -31,7 +31,7 @@ const ContactSection = () => {
             className="absolute inset-0 w-full h-full object-cover object-right-top hidden lg:block"
           />
 
-          {/* Ofis Bilgileri Grid (Bloklar arası boşluk biraz daha artırıldı) */}
+          {/* Ofis Bilgileri Grid */}
           <div className="absolute inset-0 flex flex-col justify-center px-4 lg:px-16 z-20">
             <div className="grid grid-cols-2 gap-x-14 gap-y-16 w-full max-w-lg">
               
