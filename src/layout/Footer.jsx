@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
@@ -22,9 +23,9 @@ const Footer = () => {
         <div>
           <h3 className="font-bold text-[#252B42] mb-5 text-base">Company Info</h3>
           <ul className="flex flex-col gap-3 text-[#737373] font-semibold">
-            <li><a href="#" className="hover:text-[#252B42]">About Us</a></li>
-            <li><a href="#" className="hover:text-[#252B42]">Carrier</a></li>
-            <li><a href="#" className="hover:text-[#252B42]">We are hiring</a></li>
+            <li><Link to="/team" className="hover:text-[#252B42]">About Us</Link></li>
+            <li><Link to="/team" className="hover:text-[#252B42]">Carrier</Link></li>
+            <li><Link to="/contact" className="hover:text-[#252B42]">We are hiring</Link></li>
             <li><a href="#" className="hover:text-[#252B42]">Blog</a></li>
           </ul>
         </div>
@@ -33,9 +34,9 @@ const Footer = () => {
         <div>
           <h3 className="font-bold text-[#252B42] mb-5 text-base">Legal</h3>
           <ul className="flex flex-col gap-3 text-[#737373] font-semibold">
-            <li><a href="#" className="hover:text-[#252B42]">About Us</a></li>
-            <li><a href="#" className="hover:text-[#252B42]">Carrier</a></li>
-            <li><a href="#" className="hover:text-[#252B42]">We are hiring</a></li>
+            <li><Link to="/team" className="hover:text-[#252B42]">About Us</Link></li>
+            <li><Link to="/team" className="hover:text-[#252B42]">Carrier</Link></li>
+            <li><Link to="/contact" className="hover:text-[#252B42]">We are hiring</Link></li>
             <li><a href="#" className="hover:text-[#252B42]">Blog</a></li>
           </ul>
         </div>
