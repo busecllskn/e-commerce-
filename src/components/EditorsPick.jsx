@@ -28,7 +28,7 @@ const EditorsPick = () => {
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute bottom-6 left-6 bg-white py-3 px-10 shadow-md">
-            <span className="font-bold text-[#252B42] text-base tracking-wider">MEN</span>
+            <span className="font-bold text-[#252B42] text-base tracking-wider">WOMEN</span>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const EditorsPick = () => {
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute bottom-6 left-6 bg-white py-3 px-8 shadow-md">
-            <span className="font-bold text-[#252B42] text-base tracking-wider">WOMEN</span>
+            <span className="font-bold text-[#252B42] text-base tracking-wider">MEN</span>
           </div>
         </div>
 
