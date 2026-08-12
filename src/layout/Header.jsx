@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Phone, Mail, Search, ShoppingCart, Heart, User, ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const location = useLocation();
+  const [isPagesOpen, setIsPagesOpen] = useState(false);
   
   const isGreenHeader = 
     location.pathname.startsWith('/shop') || 
     location.pathname.startsWith('/product') || 
     location.pathname.startsWith('/products') ||
-    location.pathname.startsWith('/about');
+    location.pathname.startsWith('/about') ||
+    location.pathname.startsWith('/team');
 
   return (
-    <header className="w-full font-sans">
+    <header className="w-full font-sans relative z-50">
       {/* Üst İletişim Çubuğu */}
       <div className={`${isGreenHeader ? 'bg-[#23856D]' : 'bg-[#252B42]'} text-white py-3 hidden md:flex justify-between items-center px-6 lg:px-10 transition-colors duration-300`}>
         <div className="flex items-center gap-6 text-sm">
@@ -35,7 +37,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Ana Navigasyon Çubuğu (Tek Logo) */}
+      {/* Ana Navigasyon Çubuğu */}
       <div className="bg-white py-4 px-4 md:px-10 flex items-center justify-between border-b border-gray-200">
         <Link to="/" className="text-3xl font-bold text-[#252B42]">
           Bandage
@@ -43,13 +45,34 @@ const Header = () => {
 
         <nav className="hidden md:flex items-center gap-8 font-medium text-[#737373]">
           <Link to="/" className="hover:text-[#252B42]">Home</Link>
-          <Link to="/shop" className="text-[#252B42] font-semibold flex items-center gap-1">
+          <Link to="/shop" className="hover:text-[#252B42] flex items-center gap-1">
             Shop <ChevronDown size={14} />
           </Link>
           <Link to="/about" className="hover:text-[#252B42]">About</Link>
           <Link to="/blog" className="hover:text-[#252B42]">Blog</Link>
           <Link to="/contact" className="hover:text-[#252B42]">Contact</Link>
-          <Link to="/pages" className="hover:text-[#252B42]">Pages</Link>
+          
+          {/* PAGES DROPDOWN */}
+          <div className="relative">
+            <button 
+              onClick={() => setIsPagesOpen(!isPagesOpen)}
+              className="flex items-center gap-1 hover:text-[#252B42] focus:outline-none"
+            >
+              Pages <ChevronDown size={14} className={`transition-transform duration-200 ${isPagesOpen ? 'rotate-180' : ''}`} />
+            </button>
+
+            {isPagesOpen && (
+              <div className="absolute top-full left-0 mt-2 w-36 bg-white border border-gray-100 shadow-lg rounded-md py-2 flex flex-col z-50">
+                <Link 
+                  to="/team" 
+                  onClick={() => setIsPagesOpen(false)}
+                  className="px-4 py-2 text-sm text-[#737373] hover:bg-gray-50 hover:text-[#23A6F0]"
+                >
+                  Team
+                </Link>
+              </div>
+            )}
+          </div>
         </nav>
 
         <div className="flex items-center gap-4 md:gap-6 text-[#23A6F0]">
