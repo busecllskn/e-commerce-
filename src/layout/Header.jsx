@@ -64,6 +64,13 @@ const Header = () => {
             {isPagesOpen && (
               <div className="absolute top-full left-0 mt-2 w-36 bg-white border border-gray-100 shadow-lg rounded-md py-2 flex flex-col z-50">
                 <Link 
+                  to="/about" 
+                  onClick={() => setIsPagesOpen(false)}
+                  className="px-4 py-2 text-sm text-[#737373] hover:bg-gray-50 hover:text-[#23A6F0]"
+                >
+                  About Us
+                </Link>
+                <Link 
                   to="/team" 
                   onClick={() => setIsPagesOpen(false)}
                   className="px-4 py-2 text-sm text-[#737373] hover:bg-gray-50 hover:text-[#23A6F0]"

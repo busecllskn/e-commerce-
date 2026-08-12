@@ -6,6 +6,7 @@ import ShopPage from './pages/ShopPage';
 import ProductsPage from './pages/ProductsPage';
 import ContactPage from './pages/ContactPage';
 import TeamPage from './pages/TeamPage';
+import AboutUsPage from './pages/AboutUsPage';
 
 function App() {
   return (
