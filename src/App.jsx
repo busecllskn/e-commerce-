@@ -17,7 +17,7 @@ function App() {
           <Route path="/shop" component={ShopPage} />
           <Route path="/product" component={ProductsPage} />
           <Route path="/products" component={ProductsPage} />
-          <Route path="/about" component={ProductsPage} />
+          <Route path="/about" component={AboutUsPage} />
           <Route path="/contact" component={ContactPage} />
           <Route path="/team" component={TeamPage} />
         </Switch>
