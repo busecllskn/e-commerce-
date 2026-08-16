@@ -1,8 +1,10 @@
 import axios from 'axios';
 
-export const axiosInstance = axios.create({
-  baseURL: 'https://workintech-fe-ecommerce.onrender.com',
+const api = axios.create({
+  baseURL: 'https://workintech-fe-ecommerce.herokuapp.com',
   headers: {
     'Content-Type': 'application/json',
   },
 });
+
+export default api;

@@ -83,9 +83,12 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-4 md:gap-6 text-[#23A6F0]">
-          <Link to="/login" className="flex items-center gap-2 font-medium hover:text-blue-600">
-            <User size={16} /> <span className="hidden md:inline">Login / Register</span>
-          </Link>
+          <div className="flex items-center gap-2 font-medium">
+            <User size={16} />
+            <Link to="/login" className="hover:text-blue-600">Login</Link>
+            <span className="text-gray-400">/</span>
+            <Link to="/signup" className="hover:text-blue-600">Register</Link>
+          </div>
           <a href="#" className="p-2 hover:bg-gray-100 rounded-full"><Search size={18} /></a>
           <a href="#" className="p-2 hover:bg-gray-100 rounded-full relative">
             <ShoppingCart size={18} />
