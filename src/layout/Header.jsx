@@ -48,7 +48,7 @@ const Header = () => {
           <Link to="/shop" className="hover:text-[#252B42] flex items-center gap-1">
             Shop <ChevronDown size={14} />
           </Link>
-          <Link to="/about" className="hover:text-[#252B42]">About</Link>
+          <Link to="/product" className="hover:text-[#252B42]">About</Link>
           <Link to="/blog" className="hover:text-[#252B42]">Blog</Link>
           <Link to="/contact" className="hover:text-[#252B42]">Contact</Link>
           
