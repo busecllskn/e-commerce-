@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Play } from 'lucide-react';
 import { teamMembers } from '../data/TeamData';
-import Elipsönü from '../assets/elipsönü.png';
+import Elipsönü from '../assets/elipsonu.png';
 import Letgrowmodel from '../assets/letgrowmodel.png';
 import Videoresmi from '../assets/videoresmi.jpg';
 import hooli from '../assets/hooli.png';
