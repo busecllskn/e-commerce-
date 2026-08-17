@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="w-full bg-white font-sans mt-20">
-      {/* Logo ve Sosyal Medya İkonları */}
+      {/* Logo and Social Media Icons */}
       <div className="bg-[#FAFAFA] py-10 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center border-b border-gray-100">
         <div className="text-2xl font-bold text-[#252B42] mb-4 md:mb-0">
           Bandage
@@ -16,15 +17,15 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Menü Sütunları ve Abone Ol */}
+      {/* Menu Columns and Subscribe */}
       <div className="px-6 md:px-12 py-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-sm">
         {/* Company Info */}
         <div>
           <h3 className="font-bold text-[#252B42] mb-5 text-base">Company Info</h3>
           <ul className="flex flex-col gap-3 text-[#737373] font-semibold">
             <li><a href="#" className="hover:text-[#252B42]">About Us</a></li>
-            <li><a href="#" className="hover:text-[#252B42]">Carrier</a></li>
-            <li><a href="#" className="hover:text-[#252B42]">We are hiring</a></li>
+            <li><Link to="/team" className="hover:text-[#252B42]">Carrier</Link></li>
+            <li><Link to="/contact" className="hover:text-[#252B42]">We are hiring</Link></li>
             <li><a href="#" className="hover:text-[#252B42]">Blog</a></li>
           </ul>
         </div>
@@ -34,8 +35,8 @@ const Footer = () => {
           <h3 className="font-bold text-[#252B42] mb-5 text-base">Legal</h3>
           <ul className="flex flex-col gap-3 text-[#737373] font-semibold">
             <li><a href="#" className="hover:text-[#252B42]">About Us</a></li>
-            <li><a href="#" className="hover:text-[#252B42]">Carrier</a></li>
-            <li><a href="#" className="hover:text-[#252B42]">We are hiring</a></li>
+            <li><Link to="/team" className="hover:text-[#252B42]">Carrier</Link></li>
+            <li><Link to="/contact" className="hover:text-[#252B42]">We are hiring</Link></li>
             <li><a href="#" className="hover:text-[#252B42]">Blog</a></li>
           </ul>
         </div>
@@ -79,7 +80,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Telif Hakkı Alanı */}
+      {/* Copyright Area */}
       <div className="bg-[#FAFAFA] py-6 px-6 md:px-12 text-[#737373] font-semibold text-sm">
         <p>Made With Love By Finland All Right Reserved</p>
       </div>
