@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Play } from 'lucide-react';
 import { teamMembers } from '../data/teamData';
-import Elipsönü from '../assets/elipsönü.png';
-import Letgrowmodel from '../assets/letgrowmodel.png';
-import Videoresmi from '../assets/videoresmi.jpg';
+import elipsonu from '../assets/elipsonu.png';
+import letgrowmodel from '../assets/letgrowmodel.png';
+import videoresmi from '../assets/videoresmi.jpg';
 import hooli from '../assets/hooli.png';
 import lyft from '../assets/lyft.png';
 import robinhood from '../assets/logo.png';
@@ -53,7 +53,7 @@ const AboutUs = () => {
 
             {/* Kadın Görseli */}
             <img
-              src={Elipsönü}
+              src={elipsonu}
               alt="About Us Shopping"
               className="w-full max-h-[680px] scale-125 object-contain relative z-10"
             />
@@ -103,7 +103,7 @@ const AboutUs = () => {
       <section className="px-6 md:px-20 py-12 flex justify-center bg-white">
         <div className="relative w-full max-w-5xl h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg flex items-center justify-center bg-gray-200">
           <img
-            src={Videoresmi}
+            src={videoresmi}
             alt="Video Thumbnail"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -168,7 +168,7 @@ const AboutUs = () => {
           <Link to="/contact" className="border border-white hover:bg-white hover:text-[#2A7CC7] font-bold px-6 py-3 rounded-md transition-colors">Button</Link>
         </div>
         <div className="w-full md:w-1/2 bg-gray-300 min-h-[300px]">
-          <img src={Letgrowmodel} alt="Work with us" className="w-full h-full object-cover" />
+          <img src={letgrowmodel} alt="Work with us" className="w-full h-full object-cover" />
         </div>
       </section>
     </div>
