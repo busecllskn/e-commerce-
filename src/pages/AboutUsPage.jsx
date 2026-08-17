@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Play } from 'lucide-react';
-import { teamMembers } from '../data/TeamData';
+import { teamMembers } from '../data/teamData';
 import elipsonu from '../assets/elipsonu.png';
 import letgrowmodel from '../assets/letgrowmodel.png';
 import Videoresmi from '../assets/videoresmi.jpg';
@@ -11,6 +11,7 @@ import robinhood from '../assets/logo.png';
 import stripe from '../assets/stripe.png';
 import aws from '../assets/aws.png';
 import reddit from '../assets/teletabi.png';
+
 
 const AboutUs = () => {
   return (

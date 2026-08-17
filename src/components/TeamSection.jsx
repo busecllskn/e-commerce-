@@ -1,5 +1,5 @@
 import React from 'react';
-import { teamMembers } from '../data/TeamData';
+import { teamMembers } from '../data/teamData';
 
 const TeamSection = () => {
   return (
