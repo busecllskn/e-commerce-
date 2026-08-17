@@ -4,7 +4,7 @@ import { Play } from 'lucide-react';
 import { teamMembers } from '../data/teamData';
 import elipsonu from '../assets/elipsonu.png';
 import letgrowmodel from '../assets/letgrowmodel.png';
-import Videoresmi from '../assets/videoresmi.jpg';
+import videoresmi from '../assets/videoresmi.jpg';
 import hooli from '../assets/hooli.png';
 import lyft from '../assets/lyft.png';
 import robinhood from '../assets/logo.png';
@@ -104,7 +104,7 @@ const AboutUs = () => {
       <section className="px-6 md:px-20 py-12 flex justify-center bg-white">
         <div className="relative w-full max-w-5xl h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg flex items-center justify-center bg-gray-200">
           <img
-            src={Videoresmi}
+            src={videoresmi}
             alt="Video Thumbnail"
             className="absolute inset-0 w-full h-full object-cover"
           />
