@@ -169,7 +169,7 @@ const AboutUs = () => {
           <Link to="/contact" className="border border-white hover:bg-white hover:text-[#2A7CC7] font-bold px-6 py-3 rounded-md transition-colors">Button</Link>
         </div>
         <div className="w-full md:w-1/2 bg-gray-300 min-h-[300px]">
-          <img src={Letgrowmodel} alt="Work with us" className="w-full h-full object-cover" />
+          <img src={letgrowmodel} alt="Work with us" className="w-full h-full object-cover" />
         </div>
       </section>
     </div>
