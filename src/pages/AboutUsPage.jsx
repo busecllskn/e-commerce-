@@ -12,6 +12,7 @@ import stripe from '../assets/stripe.png';
 import aws from '../assets/aws.png';
 import reddit from '../assets/teletabi.png';
 
+
 const AboutUs = () => {
   return (
     <div className="w-full font-sans bg-white overflow-x-hidden">
